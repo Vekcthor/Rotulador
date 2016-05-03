@@ -27,11 +27,11 @@ main()
 
 	for(;;)
 	{
-		printf("Escreva o Nome do %dº Ingrediente:", counter+1);
+		printf("Escreva o Nome do %dÂº Ingrediente:", counter+1);
 		scanf("%s", &ing[counter]);
 		printf("Escreva a Quantidade Desse Ingrediente(Em gramas):");
 		scanf("%f", &quant[counter]);
-		printf("Se Quiser Adicionar mais Ingredientes, Digite 1, Senão 0:");
+		printf("Se Quiser Adicionar mais Ingredientes, Digite 1, SenÃ£o 0:");
 		scanf("%d", &linha);
 		soma=soma+quant[counter];
 		counter++;
@@ -39,7 +39,7 @@ main()
 		system("cls");
 		if(linha==0)
 		{
-        break; //força a saída do loop
+        break; //forÃ§a a saÃ­da do loop
     	}
     }
     
@@ -69,27 +69,11 @@ main()
     for(int cont=limit-1;cont>=0;cont--)
 	{
 		
-		printf("O %dº Ingrediente é:%s Sua quantidade é:%.0fg E sua porcentagem é:%.3f%%\n", ingt, ing[cont],quant[cont],porcentagem[cont]);
+		printf("O %dÂº Ingrediente Ã©:%s Sua quantidade Ã©:%.0fg E sua porcentagem Ã©:%.3f%%\n", ingt, ing[cont],quant[cont],porcentagem[cont]);
 		ingt=ingt++;
 		
 	}
-	printf("Total dos Ingredientes é:%d Gramas",soma);
+	printf("Total dos Ingredientes Ã©:%d Gramas",soma);
 	getch();
-   /*do
-   {
-   	i=linha++;
-	printf("Escreva o nome do ingrediente:");
-	scanf("%c",&str);
-	j = strlen(str);
-	sair[j]=str[j];
-	ing[i][j]=sair[j];
-	printf("%c\n",ing[i][j]);
-	getch();
-	printf("Deseja adicionar mais ingredientes?\n(Digite 1 para sim, 0 para adicionar a quantidade):");
-	scanf("%i",&counter); 
-	system("cls");
-   }while(counter==1);
-	printf("Funfou");
-	getch();*/
-}
+ }
 
