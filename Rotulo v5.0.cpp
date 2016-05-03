@@ -6,13 +6,7 @@
 
 */
 
-#include <stdio.h>
-#include <conio.h>
-#include <locale.h>
-#include <stdlib.h>
-#include <string.h>
-
-main()
+ain()
 {
     setlocale(LC_ALL, "Portuguese");//comando usado para que o progama identifique o alfabeto latino
 	
